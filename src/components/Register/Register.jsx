@@ -675,7 +675,7 @@ useEffect(() => {
                 <div className={css.carinputset}>
             
                   <div className={css.togglediv}>
-                    <input
+                    <input style={{border:"none"}} 
                       className={css.carinput}
                       type="text"
                       name=""
@@ -700,7 +700,7 @@ useEffect(() => {
                 </div> 
 
                 <div className={`${css.carinputsets} ${carData.registrationNumber ? css.hasContent : ""}`}>
-                  <div className={css.regnumbbox}>
+                  <div className={!isChecked? css.regnumbboxinactive :css.regnumbbox}>
                     <input
                       className={!isChecked ? css.inactive : css.carinput}
                       // className={ `${css.carinput} ${css.forfade}`}
@@ -751,12 +751,12 @@ useEffect(() => {
         <span className={`${css.char} ${css.forfade}`}style={{ transitionDelay: '999ms' }}>R</span>
       
     </label>
-                    <img src={Tick} alt="" />
+                    <img className={css.regtick} src={Tick} alt="" />
                   </div>
          
                   {/* <div className={css.inputline}> </div> */}
                   <div className={css.dummy}>
-                  <span>Should be a max of 10 digits(TN05YY1234)</span>
+                  <span className={!isChecked? css.dummyspanfade : css.dummyspan}>Should be a max of 10 digits(TN05YY1234)</span>
                 </div>
                 </div>
                 

@@ -224,8 +224,11 @@ border: 1px solid #666 !important;
   width: 100%;
   padding-bottom: 2px;
   padding-top: 15px;
-  border-bottom:1px solid blue ;
+  /* border-bottom:1px solid blue ; */
   color: #FFF;
+  border-bottom: 1px solid transparent;
+border-image: linear-gradient(0.25turn, rgba(0,122,255), rgba(0,66,137), rgba(0,25,52));
+border-image-slice: 1;
 
 }
 .inputset input:focus,
@@ -276,8 +279,11 @@ border: 1px solid #666 !important;
   width: 100%;
   padding-bottom: 2px;
   padding-top: 15px;
-  border-bottom:1px solid blue ;
+  /* border-bottom:1px solid blue ; */
   color: #FFF;
+  border-bottom: 1px solid transparent;
+border-image: linear-gradient(0.25turn, rgba(0,122,255), rgba(0,66,137), rgba(0,25,52));
+border-image-slice: 1;
 
 }
 .applydiv input:focus,
@@ -316,10 +322,15 @@ border: 1px solid #666 !important;
 
 .showImage{
   display:inline-block;
+  position: absolute;
+  right: 0;
+  
 }
 .hideImage{
   /* display: none; */
   opacity: 0.1;
+  position: absolute;
+  right: 0;
 }
 
 

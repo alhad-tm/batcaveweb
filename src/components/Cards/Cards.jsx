@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import css from "./Cards.module.css"
 import Card1 from "../../assets/batcave-og-card.svg"
 import Blur from "../../assets/blur-blue.svg"
@@ -10,17 +10,62 @@ import { motion } from 'framer-motion'
 const Cards = () => {
   const [cards,setCards]=useState(0)
 
+  // const increment = () => {
+  //   if (cards<4){
+  //   setCards(cards + 1);
+  //   }
+  // };
+
+  // const decrement = () => {
+  //   if (cards > 0) {
+  //     setCards(cards - 1);
+  //   }
+  // };
+
+ 
+  // const autoScrollInterval = 3000;
+
+  // useEffect(() => {
+  
+  //   const autoScrollTimer = setInterval(() => {
+  //     increment();
+  //   }, autoScrollInterval);
+
+   
+  //   return () => {
+  //     clearInterval(autoScrollTimer);
+  //   };
+  // }, []);
+
+
   const increment = () => {
-    if (cards<4){
-    setCards(cards + 1);
-    }
+    setCards((prevCards) => (prevCards < 4 ? prevCards + 1 : 0)); // Cycle back to the first card if at the last card
   };
 
   const decrement = () => {
-    if (cards > 0) {
-      setCards(cards - 1);
-    }
+    setCards((prevCards) => (prevCards > 0 ? prevCards - 1 : 4)); // Cycle to the last card if at the first card
   };
+
+  // Define the auto-scrolling interval in milliseconds
+  const autoScrollInterval = 3000; // 3 seconds
+
+  useEffect(() => {
+    // Start auto-scrolling when the component mounts
+    const autoScrollTimer = setInterval(() => {
+      increment();
+    }, autoScrollInterval);
+
+    // Clear the interval when the component unmounts to prevent memory leaks
+    return () => {
+      clearInterval(autoScrollTimer);
+    };
+  }, []);
+
+
+
+
+
+
   const mobile = window.innerWidth <= 768 ? true : false;
 
   return (
@@ -79,27 +124,27 @@ const Cards = () => {
             <div className={css.bottomwrap}>
             <div className={css.bottomcontent}>
            {cards===0 &&   <motion.span
-             initial={{ opacity: 0}}
-             whileInView={{ opacity: 1}}
-              transition={{ duration: 2 }}>Exclusive Event Access: 
+             initial={{ opacity: 1, x:1000}}
+             whileInView={{ opacity: 1,x:0}}
+              transition={{ duration: 1 }}>Exclusive Event Access: 
 Get VIP entry to thrilling car meets and rides.</motion.span> }
 
 {cards===1 &&  <motion.span
-      initial={{ opacity: 0}}
-      whileInView={{ opacity: 1}}
+      initial={{ opacity: 1,x:1000}}
+      whileInView={{ opacity: 1,x:0}}
        transition={{ duration: 2 }}> Savings on Services: Enjoy discounts on car maintenance and 
   accessories. </motion.span>}
 
   {cards===2 && <motion.span
-    initial={{ opacity: 0}}
+    initial={{ opacity: 1}}
     whileInView={{ opacity: 1}}
      transition={{ duration: 2 }}>
     Community Connection: Join a passionate network of car enthusiasts.</motion.span>}
 
     {cards===3 && <motion.span
-      initial={{ opacity: 0}}
+      initial={{ opacity: 1}}
       whileInView={{ opacity: 1}}
-       transition={{ duration: 1.4 }}>
+       transition={{ duration: 2 }}>
       Lifetime Access to Club Facilities: Batcave sets up dedicated car club facilities, & members get lifetime access.</motion.span>}
 
        {cards===4 && <motion.span
@@ -112,11 +157,7 @@ Get VIP entry to thrilling car meets and rides.</motion.span> }
 
             </div>
 
-            <div className={css.newbottom}>
-            <span>Pricing</span>
-            {/* <span>₹ 49,999 /- (Lifetime access)</span> */}
-            <span>₹ 14,999 /- (Yearly subscription)</span>
-            </div>
+            
             </div>
 
           
@@ -130,6 +171,15 @@ Get VIP entry to thrilling car meets and rides.</motion.span> }
 
          
 
+        </div>
+{/* here */}
+
+        <div className={css.div4}>
+        <div className={css.newbottom}>
+            <span>Pricing</span>
+            {/* <span>₹ 49,999 /- (Lifetime access)</span> */}
+            <span>₹ 14,999 /- (Yearly subscription)</span>
+            </div>
         </div>
       
     </div>
