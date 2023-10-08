@@ -277,6 +277,10 @@ letter-spacing: 0.84px;
 .div4{
     margin-top: 3.2rem;
 }
+.pricingline{
+    height: 1px;
+    background: linear-gradient(90deg, #007AFF 0%, #004289 46.15%, #001934 100%);
+}
 
 @media screen and (max-width:768px){
     .container{
@@ -387,6 +391,9 @@ letter-spacing: 2.16px;
     }
     .featurespan{
         font-size: 16px;
+    }
+    .div4{
+        margin-top: 0;
     }
     
 }

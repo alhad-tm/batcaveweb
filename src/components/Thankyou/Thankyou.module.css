@@ -13,7 +13,7 @@
 }
 .loaded{
     width: 100%;
-    background-image: url(../../assets/main-bg.png);
+    background-image: url(../../assets/mainbgwithlogo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@ letter-spacing: 0.96px;
     background-color: #050505;
 }
     .loaded{
-        background-image: url(../../assets/final-mob-bg.png);
+        background-image: url(../../assets/mobilemainbg.png);
     }
     .wrap{
         /* padding-bottom: 2.8rem; */

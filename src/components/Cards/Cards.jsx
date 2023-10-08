@@ -124,32 +124,32 @@ const Cards = () => {
             <div className={css.bottomwrap}>
             <div className={css.bottomcontent}>
            {cards===0 &&   <motion.span
-             initial={{ opacity: 1, x:1000}}
+             initial={{ opacity: 0, x:1000}}
              whileInView={{ opacity: 1,x:0}}
               transition={{ duration: 1 }}>Exclusive Event Access: 
 Get VIP entry to thrilling car meets and rides.</motion.span> }
 
 {cards===1 &&  <motion.span
-      initial={{ opacity: 1,x:1000}}
+      initial={{ opacity: 0,x:1000}}
       whileInView={{ opacity: 1,x:0}}
        transition={{ duration: 2 }}> Savings on Services: Enjoy discounts on car maintenance and 
   accessories. </motion.span>}
 
   {cards===2 && <motion.span
-    initial={{ opacity: 1}}
-    whileInView={{ opacity: 1}}
+    initial={{ opacity: 0,x:1000}}
+    whileInView={{ opacity: 1,x:0}}
      transition={{ duration: 2 }}>
     Community Connection: Join a passionate network of car enthusiasts.</motion.span>}
 
     {cards===3 && <motion.span
-      initial={{ opacity: 1}}
-      whileInView={{ opacity: 1}}
+      initial={{ opacity: 0,x:1000}}
+      whileInView={{ opacity: 1,x:0}}
        transition={{ duration: 2 }}>
       Lifetime Access to Club Facilities: Batcave sets up dedicated car club facilities, & members get lifetime access.</motion.span>}
 
        {cards===4 && <motion.span
-         initial={{ opacity: 0}}
-         whileInView={{ opacity: 1}}
+         initial={{ opacity: 0,x:1000}}
+         whileInView={{ opacity: 1,x:0}}
           transition={{ duration: 1.4 }}>  Personalised Benefits: Tailored perks based on your interests.
         </motion.span>}
 
@@ -179,6 +179,7 @@ Get VIP entry to thrilling car meets and rides.</motion.span> }
             <span>Pricing</span>
             {/* <span>₹ 49,999 /- (Lifetime access)</span> */}
             <span>₹ 14,999 /- (Yearly subscription)</span>
+            <div className={css.pricingline}></div>
             </div>
         </div>
       

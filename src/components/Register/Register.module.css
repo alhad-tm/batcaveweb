@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   /* background: #050505; */
-  background-image: url(../../assets/registerbackground.png);
+  background-image: url(../../assets/registerbgwithlogo.png);
   background-size: cover;
   /* background-position: center; */
   display: flex;

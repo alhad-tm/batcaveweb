@@ -34,8 +34,8 @@ const MemberProgress = () => {
       if (isVisible) {
         // Animate the progress bar to fill around 50% over 2 seconds
         let start = 0;
-        const end = 50;
-        const duration = 2000; // 2 seconds
+        const end = 70;
+        const duration = 1600; 
   
         const animate = () => {
           const currentTime = Date.now();
@@ -56,7 +56,7 @@ const MemberProgress = () => {
   
     const containerStyle = {
        // Adjust the width of the container as needed
-      height: '20px', // Adjust the height of the container as needed
+      height: '3px', // Adjust the height of the container as needed
       backgroundColor: 'rgba(54, 57, 56, 1)', // Grey background color for the container
       position: 'relative',
     };
