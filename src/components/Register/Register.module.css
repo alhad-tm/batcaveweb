@@ -15,7 +15,11 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 6% 10%;
+  /* padding: 6% 10%; */
+  padding-top: 6%;
+  padding-bottom: 6%;
+  padding-left: 10%;
+  padding-right: 6%;
 }
 .left {
   width: 40%;
@@ -830,6 +834,7 @@ letter-spacing: 0.84px;
   .wrap{
     flex-direction: column;
     gap: 2rem;
+    padding-right: 10%;
   }
   .left{
     width: 100%;

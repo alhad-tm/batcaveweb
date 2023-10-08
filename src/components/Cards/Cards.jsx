@@ -124,14 +124,14 @@ const Cards = () => {
             <div className={css.bottomwrap}>
             <div className={css.bottomcontent}>
            {cards===0 &&   <motion.span
-             initial={{ opacity: 0, x:1000}}
+             initial={{ opacity: 0, x:100}}
              whileInView={{ opacity: 1,x:0}}
               transition={{ duration: 1 }}>
                Exclusive Events: Access thrilling car meets, scenic rides, and exclusive gatherings.
 </motion.span> }
 
 {cards===1 &&  <motion.span
-      initial={{ opacity: 0,x:1000}}
+      initial={{ opacity: 0,x:20}}
       whileInView={{ opacity: 1,x:0}}
        transition={{ duration: 2 }}> 
     Savings on Services: Enjoy significant discounts on car maintenance and accessories.
@@ -139,21 +139,21 @@ const Cards = () => {
    </motion.span>}
 
   {cards===2 && <motion.span
-    initial={{ opacity: 0,x:1000}}
+    initial={{ opacity: 0,x:20}}
     whileInView={{ opacity: 1,x:0}}
      transition={{ duration: 2 }}>
    Community Connection: Connect with like-minded car enthusiasts and make lifelong friends.
     </motion.span>}
 
     {cards===3 && <motion.span
-      initial={{ opacity: 0,x:1000}}
+      initial={{ opacity: 0,x:20}}
       whileInView={{ opacity: 1,x:0}}
        transition={{ duration: 2 }}>
 Personalized Perks: Tailored benefits based on your specific interests.
       </motion.span>}
 
        {cards===4 && <motion.span
-         initial={{ opacity: 1,x:1000}}
+         initial={{ opacity: 1,x:20}}
          whileInView={{ opacity: 1,x:0}}
           transition={{ duration: 1.4 }}> 
           Lifetime Access: Enjoy lifetime access to club facilities for camaraderie and car passion.

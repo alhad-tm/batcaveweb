@@ -234,8 +234,8 @@ text-transform: capitalize;
 }
 .bottomcontent{
     text-align: left;
-    /* margin-left: 2rem; */
-    height: 88px;
+    margin-left: 0;
+    /* height: 88px; */
 }
 .bottomcontent>:nth-child(1){
     color: #666;
@@ -246,6 +246,7 @@ font-weight: 400;
 line-height: 24px; /* 171.429% */
 letter-spacing: 0.84px;
 text-transform: capitalize;
+/* position: absolute; */
 
 }  
 .newbottom{
@@ -395,6 +396,9 @@ letter-spacing: 2.16px;
     }
     .div4{
         margin-top: 0;
+    }
+    .bottomcontent{
+        height: 88px;
     }
     
 }
