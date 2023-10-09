@@ -370,6 +370,9 @@ useEffect(() => {
     };
   }, []);
 
+
+
+  // before image loading, control whitespace
   
  
   return (

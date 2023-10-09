@@ -62,7 +62,7 @@ const MemberProgress = () => {
       width: `${progress}%`, // Dynamically set the width based on progress
       height: '100%', // Match the height of the container
        // Blue fill color for progress
-      transition: 'width 0.5s ease-in-out', // Add a smooth transition effect
+      transition: 'width 3.5s ease-in-out', // Add a smooth transition effect
     };
 
       // Determine whether to apply the glow effect based on progress
