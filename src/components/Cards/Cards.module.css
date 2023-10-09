@@ -231,10 +231,12 @@ text-transform: capitalize;
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
+    width: 100%;
 }
 .bottomcontent{
     text-align: left;
     margin-left: 0;
+    width: 100%;
     /* height: 88px; */
 }
 .bottomcontent>:nth-child(1){
@@ -246,7 +248,9 @@ font-weight: 400;
 line-height: 24px; /* 171.429% */
 letter-spacing: 0.84px;
 text-transform: capitalize;
+
 /* position: absolute; */
+
 
 }  
 .newbottom{

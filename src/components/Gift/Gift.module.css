@@ -92,7 +92,8 @@ letter-spacing: 1.8px;
 .active{
     /* fill: #007AFF; */
     fill: #004289;
- 
+    filter: drop-shadow(0 0 10px rgba(0, 122, 255, 1));
+  
 }
 /* :root {
     --gradient-color-1: #007AFF;
@@ -127,6 +128,7 @@ stroke: #004289;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
+    height: 295px;
 }
 .leftmiddlewrap{
     width: 70%;
@@ -257,6 +259,7 @@ letter-spacing: 1.2px;
         flex-direction: column;
         gap: 2rem;
         padding: 2% 2%;
+        height: auto;
        
     }
     .left{

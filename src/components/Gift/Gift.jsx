@@ -83,10 +83,10 @@ const Gift = () => {
       transition: { duration: 0.5 }, // Specify the exit animation duration
     }}
     transition={{ duration: 1 , scale:1}} 
-    mode="crossfade"
+    // mode="crossfade"
   />
 </AnimatePresence>
-         
+          
         </div>
 
         <div className={css.div3}>

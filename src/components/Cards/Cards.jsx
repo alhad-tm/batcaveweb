@@ -124,7 +124,7 @@ const Cards = () => {
             <div className={css.bottomwrap}>
             <div className={css.bottomcontent}>
            {cards===0 &&   <motion.span
-             initial={{ opacity: 0, x:100}}
+             initial={{ opacity: 0, x:20}}
              whileInView={{ opacity: 1,x:0}}
               transition={{ duration: 1 }}>
                Exclusive Events: Access thrilling car meets, scenic rides, and exclusive gatherings.
