@@ -5,55 +5,52 @@ import { Link } from 'react-router-dom';
 const MemberProgress = () => {
 
 
-    const [isVisible, setIsVisible] = useState(false);
-    const [progress, setProgress] = useState(0);
-    const progressBarRef = useRef(null);
-  
-    useEffect(() => {
-      const options = {
-        threshold: 0.5, // Trigger when at least 50% of the element is visible
-      };
-  
-      const observer = new IntersectionObserver((entries) => {
-        const entry = entries[0];
-        setIsVisible(entry.isIntersecting);
-      }, options);
-  
+  const [isVisible, setIsVisible] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const progressBarRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      threshold: 0.5, // Trigger when at least 50% of the element is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setIsVisible(entry.isIntersecting);
+    }, options);
+
+    if (progressBarRef.current) {
+      observer.observe(progressBarRef.current);
+    }
+
+    return () => {
       if (progressBarRef.current) {
-        observer.observe(progressBarRef.current);
+        observer.unobserve(progressBarRef.current);
       }
-  
-      return () => {
-        if (progressBarRef.current) {
-          observer.unobserve(progressBarRef.current);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      // Animate the progress bar to fill to 70% over a constant duration
+      const start = Date.now();
+      const end = start + 2200; // 
+
+      const animate = () => {
+        const currentTime = Date.now();
+        const progressValue = Math.min(1, (currentTime - start) / (end - start)) * 70; // Constant timing
+
+        setProgress(progressValue);
+
+        if (progressValue < 70) {
+          requestAnimationFrame(animate);
         }
       };
-    }, []);
-  
-    useEffect(() => {
-      if (isVisible) {
-        // Animate the progress bar to fill around 50% over 2 seconds
-        let start = 0;
-        const end = 70;
-        const duration = 1600; 
-  
-        const animate = () => {
-          const currentTime = Date.now();
-          const elapsedTime = currentTime - start;
-          const progress = Math.min(1, elapsedTime / duration);
-  
-          setProgress(progress * end);
-  
-          if (progress < 1) {
-            requestAnimationFrame(animate);
-          }
-        };
-  
-        start = Date.now();
-        requestAnimationFrame(animate);
-      }
-    }, [isVisible]);
-  
+
+      requestAnimationFrame(animate);
+    }
+  }, [isVisible]);
+
     const containerStyle = {
        // Adjust the width of the container as needed
       height: '3px', // Adjust the height of the container as needed
@@ -67,6 +64,9 @@ const MemberProgress = () => {
        // Blue fill color for progress
       transition: 'width 0.5s ease-in-out', // Add a smooth transition effect
     };
+
+      // Determine whether to apply the glow effect based on progress
+  // const shouldApplyGlow = isVisible;
   return ( 
     
         <div className={css.container}>
@@ -76,7 +76,8 @@ const MemberProgress = () => {
                 </div>
 
                
-                <div className={css.progresscontainer}style={containerStyle}ref={progressBarRef}>
+                <div          className={css.progresscontainer}
+                style={containerStyle}ref={progressBarRef}>
         {isVisible && ( <div className={css.progressfill} style={fillStyle}></div>)}
       </div>
 
