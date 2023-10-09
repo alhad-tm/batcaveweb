@@ -1,9 +1,20 @@
 .container {
   width: 100%;
-  /* background: #050505; */
-  background-image: url(../../assets/registerbgwithlogo.png);
+  background: #050505;
+  background-image: none;
   background-size: cover;
   /* background-position: center; */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+.loaded {
+  width: 100%;
+
+  background-image: url(../../assets/registerbgwithlogo.png);
+  background-size: cover;
+
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -828,8 +839,12 @@ letter-spacing: 0.84px;
   .container{
     padding-bottom: 8%;
     padding-top: 60px;
-    background-image: url(../../assets//formbgmobilenew2.png);
+    background-color: #050505;
     background-size: cover;
+  }
+  .loaded{
+    background-image: url(../../assets//formbgmobilenew2.png);
+
   }
   .wrap{
     flex-direction: column;

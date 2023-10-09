@@ -14,6 +14,7 @@ import DOBInput from "../DOBInput/DOBInput";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import backgroundImage from "../../assets/registerbgwithlogo.png"
 const Register = () => { 
     
 
@@ -373,10 +374,23 @@ useEffect(() => {
 
 
   // before image loading, control whitespace
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+  useEffect(() => {
+    const image = new Image();
+    image.src = backgroundImage;
+    image.onload = handleImageLoad;
+  }, []);
+
   
  
   return (
-    <div className={css.container}>
+    <div onLoad={handleImageLoad} className={`${css.container} ${imageLoaded? css.loaded:""}`}>
       <div className={css.wrap}>
         {/* <div className={css.left}>
          
