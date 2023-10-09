@@ -44,13 +44,13 @@ const Gift = () => {
     setCurrentIndex(index);
   };
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      handleNext();
-    }, 4000); // Change content every 5 seconds
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     handleNext();
+  //   }, 4000); 
 
-    return () => clearInterval(timer); // Cleanup the timer on unmount
-  }, []);
+  //   return () => clearInterval(timer); 
+  // }, []);
 
   
 

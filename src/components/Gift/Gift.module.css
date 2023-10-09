@@ -83,41 +83,25 @@ letter-spacing: 1.8px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    height: 10px;
 }
 .pagination{
     -webkit-tap-highlight-color: transparent; /* Webkit browsers */
     tap-highlight-color: transparent; /* Modern browsers */
   }
 
-.active{
-    /* fill: #007AFF; */
-    fill: #004289;
+  .active {
+    background: linear-gradient(0deg, #007AFF -0.1%, #004289 46.1%, #001934 100%), #FFF;
+    border-radius: 50%;
     filter: drop-shadow(0 0 10px rgba(0, 122, 255, 1));
-  
-}
-/* :root {
-    --gradient-color-1: #007AFF;
-    --gradient-color-2: #004289;
-    --gradient-color-3: #001934;
   }
-   */
-.active>:nth-child(1){
-    /* fill: #007AFF; */
-    fill: #004289;
-    stroke: #004289;
-/* stroke: #007AFF; */
-}
-
-.active circle:last-child{
-    /* fill: #007AFF;
-stroke: #007AFF;; */
-fill: #004289;
-stroke: #004289;
-}
-
-/* svg circle:last-child {
-    fill: #007AFF; 
-  } */
+  
+  .active circle {
+    fill: transparent; /* Set fill to transparent for all circles */
+    /* stroke: #241da2; */
+    stroke-width: 0;
+  }
+  
 
 
 /* div3 */
