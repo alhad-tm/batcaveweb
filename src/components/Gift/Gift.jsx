@@ -44,13 +44,13 @@ const Gift = () => {
     setCurrentIndex(index);
   };
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     handleNext();
-  //   }, 4000); 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      handleNext();
+    }, 4000); 
 
-  //   return () => clearInterval(timer); 
-  // }, []);
+    return () => clearInterval(timer); 
+  }, []);
 
   
 
