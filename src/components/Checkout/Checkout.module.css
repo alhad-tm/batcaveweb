@@ -154,7 +154,7 @@ border: 1px solid #666 !important;
   width: 100%;
 }
 .gtotal {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,6 +180,7 @@ border: 1px solid #666 !important;
   letter-spacing: 0.72px;
   text-transform: uppercase;
   text-align: left;
+  margin-top: 2rem;
 }
 .spaninside {
   text-decoration: underline;

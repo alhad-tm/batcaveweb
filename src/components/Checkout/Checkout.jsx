@@ -161,7 +161,7 @@ const Checkout = () => {
 
             <span className={css.checkoutspan}>Checkout summary</span>
 
-            <div className={css.line}>
+            <div style={{marginTop:"2rem"}} className={css.line}> 
                 <span>membership cost</span>
                 <span>₹ 14,999</span>
             </div>
@@ -169,7 +169,7 @@ const Checkout = () => {
                 <span>standard discount</span>
                 <span>-₹ 3,000</span>
             </div> */}
-            <div className={css.line}>
+            <div style={{marginBottom:"0rem"}} className={css.line}>
                 <span>coupon</span>
                 <span>₹ 14,999</span>
             </div>
