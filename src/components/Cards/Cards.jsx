@@ -184,7 +184,7 @@ Personalized Perks: Tailored benefits based on your specific interests.
         <div className={css.newbottom}>
             <span>Pricing</span>
             {/* <span>₹ 49,999 /- (Lifetime access)</span> */}
-            <span>₹ 14,999 /- (Yearly subscription)</span>
+            <span>₹ 14,999 /- (Lifetime access)</span>
             <div className={css.pricingline}></div>
             </div>
         </div>

@@ -65,7 +65,8 @@ position: relative;
     display: flex;
     flex-direction: column;
     /* width: 50%; */
-    width: 40%;
+    /* width: 40%; */
+    width:35%; 
     text-align: left;
     gap: 3.2rem;
 }
@@ -184,7 +185,8 @@ position: absolute;
     gap: 0.4rem;
     position: inherit;
     z-index: 99;
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
 }
 .sline{
     width: 58px;
@@ -405,4 +407,12 @@ letter-spacing: 2.16px;
         height: 88px;
     }
     
+}
+@media  screen and (min-width: 769px) and (max-width: 999px){
+    .cities>:nth-child(1){
+        font-size: 12px;
+    }
+    .bottomcontent>:nth-child(1){
+        font-size: 12px;
+    }
 }
