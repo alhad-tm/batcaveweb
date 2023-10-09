@@ -6,6 +6,7 @@ import { useLocation } from 'react-router-dom';
 const YProgressbar = () => {
     const [scrollPercentage, setScrollPercentage] = useState(0);
 
+    
 const location=useLocation()
 
 const isHomePage = location.pathname ==="/"
@@ -30,7 +31,7 @@ const isHomePage = location.pathname ==="/"
   return (
    
     <div className={isHomePage? "" + css.progresscontainer : ""}>
-      <div
+      <div 
         className={css.progress}
         style={{ height: `${scrollPercentage}%` }}>
         </div> 
