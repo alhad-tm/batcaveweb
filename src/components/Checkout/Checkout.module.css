@@ -113,6 +113,87 @@ border: 1px solid #666 !important;
 -moz-appearance: none; */
 }
 
+/* newchecbox ss */
+  
+.cbx {
+  opacity: 0 !important;
+  /* position:  relative !important; */
+ width: 22px !important;
+}
+
+.check {
+  cursor: pointer !important;
+  position: absolute !important;
+  margin: auto !important;
+  width: 18px !important;
+  height: 18px !important;
+  -webkit-tap-highlight-color: transparent !important;
+  transform: translate3d(0, 0, 0) !important;
+  top: 46px  !important;
+  left: 0px !important;
+}
+
+.check:before {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: -15px !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 50% !important;
+  background: rgba(34, 50, 84, 0.03) !important;
+  opacity: 0 !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.check svg {
+  position: relative !important;
+  z-index: 1 !important;
+  fill: none !important;
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+  stroke: #c8ccd4 !important;
+  stroke-width: 1.5 !important;
+  transform: translate3d(0, 0, 0) !important;
+  transition: all 0.2s ease !important;
+}
+
+.check svg path {
+  stroke-dasharray: 60 !important;
+  stroke-dashoffset: 0 !important;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22 !important;
+  stroke-dashoffset: 66 !important;
+}
+
+.check:hover:before {
+  opacity: 1 !important;
+}
+
+.check:hover svg {
+  stroke: #4285f4 !important;
+}
+
+.cbx:checked + .check svg {
+  stroke: #4285f4 !important;
+}
+
+.cbx:checked + .check svg path {
+  stroke-dashoffset: 60 !important;
+  transition: all 0.3s linear !important;
+}
+
+.cbx:checked + .check svg polyline {
+  stroke-dashoffset: 42 !important;
+  transition: all 0.2s linear !important;
+  transition-delay: 0.15s !important;
+}
+
+
+/* newchecbox end */
+
 
 
 .shippinglabel {
