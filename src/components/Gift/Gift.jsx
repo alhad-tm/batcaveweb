@@ -4,7 +4,8 @@ import Gift1 from "../../assets/new-thar.svg";
 import Gift2 from "../../assets/gift2.svg";
 import Gift3 from "../../assets/gift33.png";
 
-import { motion ,AnimatePresence} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+
 const Gift = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -47,12 +48,10 @@ const Gift = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       handleNext();
-    }, 4000); 
+    }, 4000);
 
-    return () => clearInterval(timer); 
+    return () => clearInterval(timer);
   }, []);
-
-  
 
   return (
     <div className={css.container}>
@@ -68,92 +67,92 @@ const Gift = () => {
             src={content[currentIndex].image}
             alt=""
           /> */}
-          <AnimatePresence >
-  <motion.img
-    key={currentIndex}
-    className={css.imgauto}
-    src={content[currentIndex].image}
-    alt=""
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    // transition={{ duration: 1.5 }} /
-    // mode="wait" 
-    // exit={{ opacity: 0 }} 
-    exit={{
-      transition: { duration: 0.5 }, // Specify the exit animation duration
-    }}
-    transition={{ duration: 1 , scale:1}} 
-    // mode="crossfade"
-  />
-</AnimatePresence>
-          
+          <AnimatePresence>
+            <motion.img
+              key={currentIndex}
+              className={css.imgauto}
+              src={content[currentIndex].image}
+              alt=""
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              // transition={{ duration: 1.5 }} /
+              // mode="wait"
+              // exit={{ opacity: 0 }}
+              exit={{
+                transition: { duration: 0.5 }, // Specify the exit animation duration
+              }}
+              transition={{ duration: 1, scale: 1 }}
+              // mode="crossfade"
+            />
+          </AnimatePresence>
         </div>
 
         <div className={css.div3}>
-
           <div className={css.leftmiddlewrap}>
-          <div className={css.left}>
-            <span>{content[currentIndex].text}</span>
-            <span>{content[currentIndex].text2}</span>
-            <span>{content[currentIndex].text3}</span>
-          </div>
+            <div className={css.left}>
+              <span>{content[currentIndex].text}</span>
+              <span>{content[currentIndex].text2}</span>
+              <span>{content[currentIndex].text3}</span>
+            </div>
 
-          {/* <span>Heading</span>
+            {/* <span>Heading</span>
         <span>This is the description of the car</span> */}
 
-          <div className={css.middle}>
-            <span>GIVEAWAY PRICES</span>
+            <div className={css.middle}>
+              <span>GIVEAWAY PRICES</span>
 
-            <div className={css.pagination}>
-              {content.map((_, index) => (
-                <React.Fragment key={index}>
-                  <svg
-                   onClick={() => handlePaginationClick(index)}
-                 
-                    className={index === currentIndex ? css.active : ""}
-                   
-                    width="14"
-                    height="13"
-                    viewBox="0 0 14 13"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="Group 33773">
-                      <circle
-                        id="Ellipse 10"
-                        cx="7"
-                        cy="6.5"
-                        r="6.25"
-                        stroke="#666666"
-                        stroke-width="0.5"
-                      />
-                      <circle
-                        id="Ellipse 9"
-                        cx="7"
-                        cy="6.5"
-                        r="3.5"
-                        fill="#666666"
-                      />
-                    </g>
-                  </svg>
-                  {index < content.length - 1 && (
-                    <div className={css.linebtw}></div>
-                  )}
-                </React.Fragment>
-              ))}
+              <div className={css.pagination}>
+                {content.map((_, index) => (
+                  <React.Fragment key={index}>
+                    <svg
+                      onClick={() => handlePaginationClick(index)}
+                      className={index === currentIndex ? css.active : ""}
+                      width="14"
+                      height="13"
+                      viewBox="0 0 14 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="Group 33773">
+                        <circle
+                          id="Ellipse 10"
+                          cx="7"
+                          cy="6.5"
+                          r="6.25"
+                          stroke="#666666"
+                          stroke-width="0.5"
+                        />
+                        <circle
+                          id="Ellipse 9"
+                          cx="7"
+                          cy="6.5"
+                          r="3.5"
+                          fill="#666666"
+                        />
+                      </g>
+                    </svg>
+                    {index < content.length - 1 && (
+                      <div className={css.linebtw}></div>
+                    )}
+                  </React.Fragment>
+                ))}
+              </div>
             </div>
-          </div>
-
           </div>
 
           <div className={css.right}>
             <span>How to Enter?</span>
             <span className={css.rspan}>1. Must be a Batcave OG member.</span>
-            <span className={css.rspan}>2. Follow @batcave.in on Instagram.</span>
+            <span className={css.rspan}>
+              2. Follow @batcave.in on Instagram.
+            </span>
             {/* <span className={css.rspan}>3. Like our giveaway post.</span>
             <span className={css.rspan}>4. Tag any 3 friends in the comments section below.</span>
             <span className={css.rspan}>5. Share our giveaway post in your Instagram story and be sure to tag us.</span> */}
-            <span className={css.rspan}>3.Like our giveaway post, tag three friends in the comments, and share the giveaway post in your Instagram story while tagging us.</span>
+            <span className={css.rspan}>
+              3.Like our giveaway post, tag three friends in the comments, and
+              share the giveaway post in your Instagram story while tagging us.
+            </span>
           </div>
         </div>
       </div>

@@ -1,124 +1,119 @@
-.container{
-    width: 100%;
-    background: #050505;
-    padding: 6% 6%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container {
+  width: 100%;
+  background: #050505;
+  padding: 6% 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.wrap{
-    width: 100%;
-    max-width: 1440px;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    align-items: center;
-    justify-content: center;
+.wrap {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
 }
-.div1>:nth-child(1){
-    color: #FFF;
-font-family: K2D;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.08px;
-text-transform: uppercase;
+.div1 > :nth-child(1) {
+  color: #fff;
+  font-family: K2D;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
 }
 
 /* progressbar */
 
-.progresscontainer{
-    width: 70%;
-    border-radius: 20px;
+.progresscontainer {
+  width: 70%;
+  border-radius: 20px;
 }
 
-.progressfill{
-    border-radius: 20px;
-    
-   
-background: var(--Primary-gradient, linear-gradient(0deg, #007AFF -0.1%, #004289 46.1%, #001934 100%));
-box-shadow: 0 0 10px rgba(2, 115, 239, 0.7);
+.progressfill {
+  border-radius: 20px;
 
-position: relative;
+  background: var(
+    --Primary-gradient,
+    linear-gradient(0deg, #007aff -0.1%, #004289 46.1%, #001934 100%)
+  );
+  box-shadow: 0 0 10px rgba(2, 115, 239, 0.7);
 
-/* filter: blur(4px); */
+  position: relative;
+
+  /* filter: blur(4px); */
 }
-  
+
 .progressfill::after {
-    content: ''; /* Create a pseudo-element */
-    position: absolute;
-    top: 0;
-    right: 0; /* Position at the right tip */
-    width: 10px; /* Adjust the width of the glow */
-    height: 100%;
-    /* box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);   */
-    box-shadow: 0 0 28px 5px #0068D9;
-    filter: blur(4px);
-    
-  }
-.registernowbtn{
-    display: inline-flex;
-height: 40px;
-padding: 10px 24px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-font-family: K2D;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.96px;
-text-transform: uppercase;
-background-color: transparent;
-border: 1px solid #FFF;
-border-radius: 6px;
-color: #FFF;
+  content: ""; /* Create a pseudo-element */
+  position: absolute;
+  top: 0;
+  right: 0; /* Position at the right tip */
+  width: 10px; /* Adjust the width of the glow */
+  height: 100%;
+  /* box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);   */
+  box-shadow: 0 0 28px 5px #0068d9;
+  filter: blur(4px);
 }
-.registernowbtn:hover{
-    cursor: pointer;
-    color: rgb(36, 88, 132);
-    border: 1px solid  rgb(36, 88, 132);
-    /* border: 1px solid blue; */
+.registernowbtn {
+  display: inline-flex;
+  height: 40px;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  font-family: K2D;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+}
+.registernowbtn:hover {
+  cursor: pointer;
+  color: rgb(36, 88, 132);
+  border: 1px solid rgb(36, 88, 132);
+  /* border: 1px solid blue; */
 }
 
 .glow-effect {
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7); /* Blue glow effect */
-  }
-
-  /* MemberProgress.module.css */
-.glow-effect::after {
-    content: ''; /* Create a pseudo-element */
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0; /* Apply the glow to the right edge */
-    width: 10px; /* Adjust the width of the glow */
-    height: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.7); /* Blue glow effect */
-  }
-  
-
-
-
-
-@media screen and (max-width:768px){
-    .progresscontainer{
-        width: 95%;
-        
-    }
-    .div1>:nth-child(1){
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.84px;
-    }
-    .registernowbtn{
-        padding: 10px 18px;
-        font-size: 14px;
-    }
-    
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.7); /* Blue glow effect */
 }
 
+/* MemberProgress.module.css */
+.glow-effect::after {
+  content: ""; /* Create a pseudo-element */
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0; /* Apply the glow to the right edge */
+  width: 10px; /* Adjust the width of the glow */
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.7); /* Blue glow effect */
+}
+
+@media screen and (max-width: 768px) {
+  .progresscontainer {
+    width: 95%;
+  }
+  .div1 > :nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.84px;
+  }
+  .registernowbtn {
+    padding: 10px 16px;
+    font-size: 12px;
+    height: 36px;
+  }
+}

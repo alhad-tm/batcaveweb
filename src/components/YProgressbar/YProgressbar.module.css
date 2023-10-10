@@ -1,34 +1,38 @@
-
-.progresscontainer{
-    position: fixed;
-    top: 40%;
-    right: 5%;
-    bottom: 0;
-    width: 3px;
-   height: 200px;
-   flex-shrink: 0;
-    background-color: #7c7575;
-    display: flex;
-    /* justify-content: flex-end;
-    align-items: flex-end; */
-   
-    border-radius: 20px;
-    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.29));
-    z-index: 4;
-  }
- 
-  .progress{
-    width: 100%;
-    /* background-color: #007bff; */
-    background-image: linear-gradient(180deg,rgba(0,25,52),rgba(0,66,137),rgba(0,122,255));
-    transition: height 0.1s ease-in-out;
-    filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.29));
-    border-radius: 20px;
-  }
-  @media screen and (max-width:768px){
-    .progresscontainer{
-      height: 167px;
-      top: 250px;
-    }
-  }
+.progresscontainer {
+  position: fixed;
+  top: 40%;
+  right: 5%;
+  bottom: 0;
+  width: 3px;
+  height: 200px;
+  flex-shrink: 0;
   
+  background-color: #7c7575;
+  display: flex;
+  /* justify-content: flex-end;
+    align-items: flex-end; */
+
+  border-radius: 20px;
+  filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.29));
+  z-index: 4;
+}
+
+.progress {
+  width: 100%;
+  /* background-color: #007bff; */
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 25, 52),
+    rgba(0, 66, 137),
+    rgba(0, 122, 255)
+  );
+  transition: height 0.1s ease-in-out;
+  filter: drop-shadow(-4px 4px 4px rgba(0, 0, 0, 0.29));
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .progresscontainer {
+    height: 167px;
+    top: 250px;
+  }
+}

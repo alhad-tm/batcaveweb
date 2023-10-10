@@ -1,5 +1,5 @@
 // FormContext.js
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 const FormContext = createContext();
 
@@ -13,7 +13,7 @@ export function FormProvider({ children }) {
   const [carData, setCarData] = useState({});
 
   useEffect(() => {
-    const storedFormState = JSON.parse(localStorage.getItem('formState'));
+    const storedFormState = JSON.parse(localStorage.getItem("formState"));
     if (storedFormState) {
       setShowFirstForm(storedFormState.showFirstForm);
       setShowSecondForm(storedFormState.showSecondForm);
@@ -21,13 +21,22 @@ export function FormProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    const formState = { showFirstForm, showSecondForm ,carData };
-    localStorage.setItem('formState', JSON.stringify(formState));
-  }, [showFirstForm, showSecondForm , carData]);
+    const formState = { showFirstForm, showSecondForm, carData };
+    localStorage.setItem("formState", JSON.stringify(formState));
+  }, [showFirstForm, showSecondForm, carData]);
 
   return (
-    <FormContext.Provider value={{ showFirstForm, showSecondForm, setShowFirstForm, setShowSecondForm,carData, setCarData }}>
+    <FormContext.Provider
+      value={{
+        showFirstForm,
+        showSecondForm,
+        setShowFirstForm,
+        setShowSecondForm,
+        carData,
+        setCarData,
+      }}
+    >
       {children}
-    </FormContext.Provider> 
+    </FormContext.Provider>
   );
 }

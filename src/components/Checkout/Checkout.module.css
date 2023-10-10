@@ -6,6 +6,7 @@
   justify-content: center;
   min-height: 100vh;
   color: whitesmoke;
+  
 }
 .wrap {
   width: 100%;
@@ -15,27 +16,27 @@
   gap: 4rem;
   padding: 6% 10%;
 }
-.wtop{
+.wtop {
   display: flex;
   align-items: center;
   gap: 0.4rem;
 }
-.wtop>:nth-child(2){
+.wtop > :nth-child(2) {
   color: #999;
-font-family: K2D;
-font-size: 16px;
-font-style: normal;
-font-weight: 275;
-line-height: normal;
-letter-spacing: 0.96px;
-text-transform: uppercase;
+  font-family: K2D;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 275;
+  line-height: normal;
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
 }
-.wbottom{
+.wbottom {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
 }
-.back{
+.back {
   position: absolute;
   top: 10%;
   left: 10%;
@@ -103,22 +104,22 @@ text-transform: uppercase;
   gap: 0.4rem;
 }
 .check {
-  background-color:transparent !important;
+  background-color: transparent !important;
   width: 16px !important;
-height: 16px !important;
-border-radius: 3px;
-border: 1px solid #666 !important;
-/* appearance: none; 
+  height: 16px !important;
+  border-radius: 3px;
+  border: 1px solid #666 !important;
+  /* appearance: none; 
 -webkit-appearance: none; 
 -moz-appearance: none; */
 }
 
 /* newchecbox ss */
-  
+
 .cbx {
   opacity: 0 !important;
   /* position:  relative !important; */
- width: 22px !important;
+  width: 22px !important;
 }
 
 .check {
@@ -129,7 +130,7 @@ border: 1px solid #666 !important;
   height: 18px !important;
   -webkit-tap-highlight-color: transparent !important;
   transform: translate3d(0, 0, 0) !important;
-  top: 46px  !important;
+  top: 46px !important;
   left: 0px !important;
 }
 
@@ -193,10 +194,7 @@ border: 1px solid #666 !important;
   transition-delay: 0.15s !important;
 }
 
-
 /* newchecbox end */
-
-
 
 .shippinglabel {
   color: #666;
@@ -289,9 +287,8 @@ border: 1px solid #666 !important;
   border-radius: 12px;
   border: none;
   background: linear-gradient(0deg, #007aff -0.1%, #004289 46.1%, #001934 100%);
+  cursor: pointer;
 }
-
-
 
 /* new input fields */
 
@@ -300,8 +297,7 @@ border: 1px solid #666 !important;
   width: 100%;
 }
 
-
-.inputset input{
+.inputset input {
   background-color: transparent;
   border: 0;
   display: block;
@@ -309,28 +305,30 @@ border: 1px solid #666 !important;
   padding-bottom: 2px;
   padding-top: 15px;
   /* border-bottom:1px solid blue ; */
-  color: #FFF;
+  color: #fff;
   border-bottom: 1px solid transparent;
-border-image: linear-gradient(0.25turn, rgba(0,122,255), rgba(0,66,137), rgba(0,25,52));
-border-image-slice: 1;
-
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(0, 122, 255),
+    rgba(0, 66, 137),
+    rgba(0, 25, 52)
+  );
+  border-image-slice: 1;
 }
 .inputset input:focus,
 .inputset input:valid {
   outline: 0;
- 
 }
-.inputset label{
+.inputset label {
   position: absolute;
   top: 15px;
   left: 0;
   pointer-events: none;
-
 }
 
 .inputset label span {
   display: inline-block;
-  font-size: 16px; 
+  font-size: 16px;
   min-width: 5px;
   color: #666;
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -339,7 +337,7 @@ border-image-slice: 1;
 }
 .inputset input:focus + label span,
 .inputset input:valid + label span {
-  color:#666666;
+  color: #666666;
   font-size: 12px;
   transform: translateY(-20px);
 }
@@ -355,8 +353,7 @@ border-image-slice: 1;
   width: 100%;
 }
 
-
-.applydiv input{
+.applydiv input {
   background-color: transparent;
   border: 0;
   display: block;
@@ -364,28 +361,30 @@ border-image-slice: 1;
   padding-bottom: 2px;
   padding-top: 15px;
   /* border-bottom:1px solid blue ; */
-  color: #FFF;
+  color: #fff;
   border-bottom: 1px solid transparent;
-border-image: linear-gradient(0.25turn, rgba(0,122,255), rgba(0,66,137), rgba(0,25,52));
-border-image-slice: 1;
-
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(0, 122, 255),
+    rgba(0, 66, 137),
+    rgba(0, 25, 52)
+  );
+  border-image-slice: 1;
 }
 .applydiv input:focus,
 .applydiv input:valid {
   outline: 0;
- 
 }
-.applydiv label{
+.applydiv label {
   position: absolute;
   top: 15px;
   left: 0;
   pointer-events: none;
-
 }
 
 .applydiv label span {
   display: inline-block;
-  font-size: 16px; 
+  font-size: 16px;
   min-width: 5px;
   color: #666;
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -394,7 +393,7 @@ border-image-slice: 1;
 }
 .applydiv input:focus + label span,
 .applydiv input:valid + label span {
-  color:#666666;
+  color: #666666;
   font-size: 12px;
   transform: translateY(-20px);
 }
@@ -404,23 +403,17 @@ border-image-slice: 1;
   transition-delay: 0ms; /* Default transition delay */
 }
 
-.showImage{
-  display:inline-block;
+.showImage {
+  display: inline-block;
   position: absolute;
   right: 0;
-  
 }
-.hideImage{
+.hideImage {
   /* display: none; */
   opacity: 0.1;
   position: absolute;
   right: 0;
 }
-
-
-
-
-
 
 /* refund */
 .refund {
@@ -457,7 +450,8 @@ border-image-slice: 1;
   letter-spacing: 0.96px;
   text-transform: uppercase;
 }
-.rcontent,.rcontent>a {
+.rcontent,
+.rcontent > a {
   color: #666;
   font-family: K2D;
   font-size: 14px;
@@ -538,22 +532,20 @@ border-image-slice: 1;
   letter-spacing: 0.84px;
   /* margin-top: 1rem; */
 }
-.inputset.hasContent label span{
-  color:#666666;
+.inputset.hasContent label span {
+  color: #666666;
   font-size: 12px;
   transform: translateY(-20px);
 }
 
-
 @media screen and (max-width: 768px) {
- 
   .wrap {
     flex-direction: column;
     padding-top: 80px;
     padding-bottom: 60px;
     gap: 2rem;
   }
-  .wbottom{
+  .wbottom {
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -566,11 +558,14 @@ border-image-slice: 1;
   .left {
     width: 100%;
   }
-  .contactinp{
+  .contactinp {
     font-size: 12px;
   }
-  .checkboxdiv{
+  .checkboxdiv {
     gap: 0.8rem;
+  }
+  .check {
+    top: 48px !important;
   }
   .shippinglabel {
     font-size: 11px;
@@ -597,22 +592,19 @@ border-image-slice: 1;
     font-size: 10px;
     line-height: 22px;
   }
-  .inputset input{
+  .inputset input {
     padding-bottom: 10px;
   }
   .inputset label span {
     font-size: 12px;
   }
   .inputset input:focus + label span,
-.inputset input:valid + label span{
-  font-size: 10px;
-}
-.inputset.hasContent label span{
-  font-size: 10px;
-
-}
-
-
+  .inputset input:valid + label span {
+    font-size: 10px;
+  }
+  .inputset.hasContent label span {
+    font-size: 10px;
+  }
 
   /* refund */
   .refund {
@@ -627,7 +619,8 @@ border-image-slice: 1;
   .rhead {
     font-size: 12px;
   }
-  .rcontent,.rcontent>a{
+  .rcontent,
+  .rcontent > a {
     margin-top: 1rem;
   }
 
@@ -653,6 +646,4 @@ border-image-slice: 1;
     gap: 10px;
     font-size: 14px;
   }
-
-
 }

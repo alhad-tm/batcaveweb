@@ -1,12 +1,12 @@
-import React, { useState ,useEffect} from 'react'
-import css from "./Main.module.css"
-import Batcave from "../../assets/batcavetext.svg"
-import backgroundImage from '../../assets/newmainbgpng.png';
+import React, { useState, useEffect } from "react";
+import css from "./Main.module.css";
+import Batcave from "../../assets/batcavetext.svg";
+import backgroundImage from "../../assets/newmainbgpng.png";
 const Main = () => {
-
+  // control whitespace before bgimage loads
   const [imageLoaded, setImageLoaded] = useState(false);
 
-
+  
   const handleImageLoad = () => {
     setImageLoaded(true);
   };
@@ -16,11 +16,13 @@ const Main = () => {
     image.onload = handleImageLoad;
   }, []);
 
-
   return (
-    <div onLoad={handleImageLoad} className={`${css.container} ${imageLoaded? css.loaded:""}`}>
-        {/* <span className={css.bt}>batcave</span> */}
-        {/* <div className={css.wrap}>
+    <div
+      onLoad={handleImageLoad}
+      className={`${css.container} ${imageLoaded ? css.loaded : ""}`}
+    >
+      {/* <span className={css.bt}>batcave</span> */}
+      {/* <div className={css.wrap}>
         <div className={css.div1}>
             <img src={Batcave} alt="" />
         </div>
@@ -30,10 +32,8 @@ const Main = () => {
         </div>
 
         </div> */}
-      
     </div>
-  )
-}
+  );
+};
 
-export default Main
-
+export default Main;
