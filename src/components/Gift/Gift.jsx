@@ -18,7 +18,7 @@ const Gift = () => {
     },
     {
       text: "MSI Stealth 16 Mercedes-AMG",
-      text2: "MSI AMG Stealth 16 Laptops for i9-13900H, 32GB, RTX4060 8GB Worth 2,89,990/-",
+      text2: "i9-13900H, 32GB, RTX4060 8GB Worth 2,89,990/-",
       text3: "5 lucky members",
       image: Gift2,
     },

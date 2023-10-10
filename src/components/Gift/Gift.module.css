@@ -263,6 +263,8 @@ letter-spacing: 1.2px;
     }
     .left>:nth-child(2){
         font-size: 14px;
+        margin-top: 0.4rem;
+        line-height: 24px;
         
 
     }

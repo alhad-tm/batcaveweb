@@ -850,6 +850,7 @@ letter-spacing: 0.84px;
     flex-direction: column;
     gap: 2rem;
     padding-right: 10%;
+    justify-content: flex-start;
   }
   .left{
     width: 100%;
@@ -921,7 +922,7 @@ font-size: 14px;
 
 
   .carinput{
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 0.72px;
   }
   .descript > :nth-child(1){
@@ -961,7 +962,7 @@ font-size: 14px;
 .carinputsets input:focus + label span,
 .carinputsets input:valid + label span
 {
-  font-size: 10px;
+  font-size: 12px;
 }
 
   /* t and c */

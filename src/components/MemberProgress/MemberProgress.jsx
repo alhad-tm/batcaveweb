@@ -33,11 +33,16 @@ const MemberProgress = () => {
   useEffect(() => {
     if (isVisible) {
       // Animate the progress bar to fill to 70% over a constant duration
-      const start = Date.now();
-      const end = start + 2200; // 
+      // const start = Date.now();
+      // const end = start + 2200; 
+   
+      const start = 0;
+      const end = 70; 
+   
 
       const animate = () => {
         const currentTime = Date.now();
+        const elapsedTime=currentTime-start
         const progressValue = Math.min(1, (currentTime - start) / (end - start)) * 70; // Constant timing
 
         setProgress(progressValue);

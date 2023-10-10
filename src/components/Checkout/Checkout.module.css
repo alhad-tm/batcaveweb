@@ -153,9 +153,11 @@ border: 1px solid #666 !important;
   stroke-linecap: round !important;
   stroke-linejoin: round !important;
   stroke: #c8ccd4 !important;
-  stroke-width: 1.5 !important;
+  stroke-width: 1 !important;
   transform: translate3d(0, 0, 0) !important;
   transition: all 0.2s ease !important;
+  left: -1px !important;
+  top: -1px !important;
 }
 
 .check svg path {
@@ -567,6 +569,9 @@ border-image-slice: 1;
   .contactinp{
     font-size: 12px;
   }
+  .checkboxdiv{
+    gap: 0.8rem;
+  }
   .shippinglabel {
     font-size: 11px;
     text-align: left;
@@ -590,6 +595,7 @@ border-image-slice: 1;
   .agreespan {
     text-align: left;
     font-size: 10px;
+    line-height: 22px;
   }
   .inputset input{
     padding-bottom: 10px;

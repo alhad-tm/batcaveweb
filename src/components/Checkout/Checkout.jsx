@@ -48,7 +48,7 @@ const Checkout = () => {
           </div>
           <div className={css.line}>
             <span>COST</span>
-            <span>₹ 14,999</span>
+            <span>₹ 14,999/-</span>
           </div>
 
           <div className={css.checkoutform}>
@@ -171,7 +171,7 @@ const Checkout = () => {
 
             <div style={{marginTop:"2rem"}} className={css.line}> 
                 <span>membership cost</span>
-                <span>₹ 14,999</span>
+                <span>₹ 14,999/-</span>
             </div>
             {/* <div className={css.line}>
                 <span>standard discount</span>
@@ -179,13 +179,13 @@ const Checkout = () => {
             </div> */}
             <div style={{marginBottom:"0rem"}} className={css.line}>
                 <span>coupon</span>
-                <span>₹ 14,999</span>
+                <span>₹ 14,999/-</span>
             </div>
             <div className={css.plainline}></div>
 
             <div className={css.gtotal}>
                 <span>grand total</span>
-                <span>₹ 13,001</span>
+                <span>₹ 13,001/-</span>
             </div>
 
             <span className={css.agreespan}>by clicking, I AGREE WITH THE <span onClick={()=>setOpened(!opened)} className={css.spaninside}>refund policy </span> &  <span onClick={()=>setsOpened(!opened)} className={css.spaninside}>shipping policy </span></span>
