@@ -12,7 +12,7 @@ const Gift = () => {
   const content = [
     {
       text: "Mahindra Thar",
-      text2: "Diesel, 117 BHP 300NM for LX RWD Worth 16,00,000/-",
+      text2: "Diesel, 117 BHP 300NM LX RWD Worth 16,00,000/-",
       text3: "2 lucky members",
       image: Gift1,
     },
@@ -24,7 +24,7 @@ const Gift = () => {
     },
     {
       text: "All-expenses-paid BMW Museum trip",
-      text2: "Munich, Germany, for German Autobahn Visit Worth 2,50,000/- ",
+      text2: "Munich, Germany, German Autobahn Visit Worth 2,50,000/- ",
       text3: "10 lucky members",
       image: Gift3,
     },

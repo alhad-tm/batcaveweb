@@ -152,8 +152,8 @@ const Cards = () => {
 Personalized Perks: Tailored benefits based on your specific interests.
       </motion.span>}
 
-       {cards===4 && <motion.span
-         initial={{ opacity: 1,x:20}}
+       {cards===4 && <motion.span 
+         initial={{ opacity: 0,x:20}}
          whileInView={{ opacity: 1,x:0}}
           transition={{ duration: 1.4 }}> 
           Lifetime Access: Enjoy lifetime access to club facilities for camaraderie and car passion.
